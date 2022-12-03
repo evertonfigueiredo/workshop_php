@@ -58,15 +58,15 @@
 ### Pega o conteúdp do dashboard para formatar o layouts.app
 
 ## Criando a Policy do produto
-php artisan make:policy ProdutoPolicy --model=Produto
+``php artisan make:policy ProdutoPolicy --model=Produto``
 
 ### Adicionar o AuthServiceProvider da ProdutoPolicy
 
 ## Criar a regra do update do ProdutoPolicy
-$user->niveis == 1
+``$user->niveis == 1``
 
 ## Verificar a regra no ProdutoController no edit / update
-$this->authorize('update', $produto);
+``$this->authorize('update', $produto);``
 
 ### Adicionar as regras de niveis nos botões
-Auth::user()->niveis == 1
+``Auth::user()->niveis == 1``
